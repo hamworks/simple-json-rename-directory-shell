@@ -1,0 +1,34 @@
+[
+	{
+		"dir_id" : "1",
+		"change_name" : "S"
+	},
+	{
+		"dir_id" : "2",
+		"change_name" : "E"
+	},
+	{
+		"dir_id" : "3",
+		"change_name" : "N"
+	},
+	{
+		"dir_id" : "4",
+		"change_name" : "T"
+	},
+	{
+		"dir_id" : "5",
+		"change_name" : "I"
+	},
+	{
+		"dir_id" : "6",
+		"change_name" : "M"
+	},
+	{
+		"dir_id" : "7",
+		"change_name" : "A"
+	},
+	{
+		"dir_id" : "8",
+		"change_name" : "L"
+	}
+]
