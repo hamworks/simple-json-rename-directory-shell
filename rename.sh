@@ -1,6 +1,8 @@
 #!/bin/bash
 
-json=$(cat rename.json)
+json_file=$1
+
+json=$(cat $json_file)
 srcDir=src
 destDir=dist
 
