@@ -16,11 +16,10 @@ $ brew install jq
 ```
 
 ## How to use
-1. Open `rename.sh` file.
-2. Rewrite source directory name and destination directory name.
-3. Save `rename.sh` file.
-4. Open terminal app, execute next command.
+```
+$ sh rename.sh [JSON] [SRC] [DEST]
+```
 
-```
-$ sh rename.sh [JSON FILE PATH]
-```
+* JSON: JSON file ( .json )
+* SRC: Source directory
+* DEST: Destination directory

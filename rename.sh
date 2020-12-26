@@ -1,13 +1,13 @@
 #!/bin/bash
 
 json_file=$1
+src_dir=$2
+dest_dir=$3
 
 json=$(cat $json_file)
-srcDir=src
-destDir=dist
 
-mkdir $destDir
-cd $srcDir
+mkdir $dest_dir
+cd $src_dir
 
 length=$(echo $json | jq length)
 
@@ -18,7 +18,7 @@ do
 	change=$(echo $json | jq -r .[$i].change_name)
 	if [ -e $dir ]; then
 		mv $dir $change
-		mv $change -t ../$destDir
+		mv $change -t ../$dest_dir
 		echo "😁 No. $i SUCCESS: Change dir name to "\"${change}\"" from "\"${dir}\""."
 	else
 	    echo "❌ No.$i FAILED: Cannot find dir "\"${dir}\""."
@@ -26,3 +26,5 @@ do
 done
 
 echo "Completed! 🍺 Well done!"
+
+exit 0
